@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.img{
+  
+ 
+  width: 30%;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;  
+}
+.img img{
+    width: 100%;
+    
+}
+.img p{
+    padding: 2rem;
+    text-align: center;
+    font-family: sans-serif;
+}
