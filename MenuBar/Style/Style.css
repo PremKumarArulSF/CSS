@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+.icon{
+    color:red;
+    font-size: 2rem;
+}
+body{
+    min-height: 100vh;
+    background-color: #ffff;
+}
+header{
+   position: fixed;
+   background-color: black;
+   top: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 5rem;
+    /* z-index: 1000; */
+    color:white;
+}
+/* .img{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #ffff;
+} */
+/* .navbar{
+    font-family: sans-serif;
+} */
+header .navbar ul {
+    list-style: none;
+    
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    color: #ffff;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    display: block;
+    font-family: sans-serif;
+    
+}
+header .navbar ul li a:hover{
+    color:palegoldenrod;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left:1rem;
+    width: 10rem;
+    display: none;
+    background-color: black;
+
+}
+/* header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid white;
+   
+} */
+header .navbar ul li:hover>ul{
+    display: initial;
+}
+#bar{
+    display: none;
+}
+.menu{
+    font-size: 1.4rem;
+    display: none;
+}
+ /* header .navbar  .btn{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ffff;
+    position: relative;
+    top:1rem;
+    padding: 0.4rem;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    padding: 0.7rem;
+    margin: 0 1.4rem;
+    
+    
+} */
+.img{
+    background-image: url('https://cdn.syncfusion.com/content/images/Logo/Logo_150dpi.png');
+    background-size: 160px 36px;
+    position: absolute;
+    width: 160px;
+    height: 36px;
+    margin-top: -1.5rem;
+  }
+
+@media (max-width:1000px)
+{
+    header{
+        padding: 1.5rem;
+    }
+    .menu{
+        display: initial;
+    }
+    /* .navbar{
+          display: none;
+    } */
+     .navbar {
+        position: absolute;
+        background-color: black;
+        top:100%;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+    .navbar ul li {
+        width:100%;
+        border-bottom: 1px solid #77B0AA;
+        
+       
+    }
+   
+
+       header .navbar ul li ul{
+        position: relative;
+        
+
+     } 
+
+    #bar:checked ~.navbar{
+        display: initial;
+    }
+}
+

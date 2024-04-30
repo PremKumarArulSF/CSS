@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+   min-height: 100vh;
+  
+
+}
+.container div{
+    
+    flex-basis: 20%;
+    
+}
+.img1{
+    border-radius: 2rem;
+  
+}
+.img2{
+    border-radius:50%;
+}
+.img3{
+    border:6px solid #ccc;
+}
+
+.text{
+    position: relative;
+    left: 2rem;
+    bottom: 2rem;
+    color:white;
+    
+}
